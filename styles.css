@@ -92,6 +92,15 @@ main a img {
     color: #666;
 }
 
+/* Style the "My Experience" section */
+.experience {
+    background-color: #fff;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 30px;
+    padding-bottom:30px;
+}
+
 /* Style the download CV button */
 .cv-button {
     background-color: #333;
