@@ -11,9 +11,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</li>
                 <li><a href="#about">About</a></li>
-                <li><a href="projects.html"></a>Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -21,10 +21,14 @@
 
     <main>
         <h1>Hi, I'm Melanie Sayyidina Sabrina Refman</h1>
+        <br>
         <h2>Informatics Students, Institut Teknologi Sepuluh Nopember</h2>        
+        <br>
         <p>Undergraduate students who are passionate about UI/UX Design, Machine Learning, and Web Development often find themselves at the exciting intersection of technology and design.</p>
-        <img scr="img/Instagram.png" alt="Me" /><br><br>
+        <br>
+        <img src="img/girl.png" alt="Me" /><br><br>
         <button class="contact-button">Contact Me!</button>
+        <br><br>
         <p>Follow me on</p>
         <a href="https://www.instagram.com" target="_blank">
             <img src="img/Instagram.png" alt="Instagram"/>
@@ -43,8 +47,10 @@
     <section class="aboutme">
         <p>WHO I AM</p>
         <h2>About Me</h2>
+        <br>
         <div class="aboutme-item">
             <p>A 5th-semester Informatics Engineering undergraduate at Sepuluh Nopember Institute of Technology, with a strong background in design, further developed through active participation in various organizations and committees. Highly interested in UI/UX design. Currently, actively engaged in HMTC as a Staff of Media Information and in Software House TC as a Staff of Marketing and Design, also serving as the Vice Head of the Design, Documentary, Decorating, and Editing Division in Schematics ITS 2023. Proficient in basic programming skills and familiar with applications like Figma, Adobe Photoshop, and Adobe Illustrator.</p>
+            <br>
             <a href="file/my_cv.pdf" download="Melanie Sayyidina Sabrina Refman_CV.pdf">
                 <button class="cv-button">
                     <span class="button-text">Download CV</span>
@@ -57,6 +63,7 @@
     <section class="skills">
         <p>MY SKILLS</p>
         <h2>Things That I'm Good at</h2>
+        <br>
         <img src="img/Figma.png" alt="Figma"/>
         <img src="img/Github.png" alt="Github"/>
         <img src="img/Python.png" alt="Python"/>
@@ -70,48 +77,28 @@
         <p>MY PROJECTS</p>
         <h2>Look at my recent projects</h2>
         <div class="tab">
-            <button onclick="openTab(event, 'tab1')">Web Design</button>
-            <button onclick="openTab(event, 'tab2')">Mobile App</button>
-            <button onclick="openTab(event, 'tab3')">Others</button>
+            <button>Web Design</button>
+            <button>Mobile App</button>
+            <button >Others</button>
         </div>
-    
-        <div id="tab1" class="tabcontent">
+        <br>
+        <div class="tabcontent">
             <h3>Web Design</h3>
-            <img src="img/Website.png" alt="Website"/>
-            <p>Website for</p>
-            <p>ITS EXPO 2023</p>
-            <img src="img/Website.png" alt="Website"/>
-            <p>Website for</p>
-            <p>INDONESIAN CORROSION WEEK 2023</p>
-            <img src="img/Website.png" alt="Website"/>
-            <p>Social Media Marketing for</p>
-            <p>Schematics ITS</p>
-        </div>
-    
-        <div id="tab2" class="tabcontent">
-            <h3>Mobile App</h3>
-            <img src="img/Website.png" alt="Website"/>
-            <p>Website for</p>
-            <p>ITS EXPO 2023</p>
-            <img src="img/Website.png" alt="Website"/>
-            <p>Website for</p>
-            <p>INDONESIAN CORROSION WEEK 2023</p>
-            <img src="img/Website.png" alt="Website"/>
-            <p>Social Media Marketing for</p>
-            <p>Schematics ITS</p>
-        </div>
-    
-        <div id="tab3" class="tabcontent">
-            <h3>Others</h3>
-            <img src="img/Website.png" alt="Website"/>
-            <p>Website for</p>
-            <p>ITS EXPO 2023</p>
-            <img src="img/Website.png" alt="Website"/>
-            <p>Website for</p>
-            <p>INDONESIAN CORROSION WEEK 2023</p>
-            <img src="img/Website.png" alt="Website"/>
-            <p>Social Media Marketing for</p>
-            <p>Schematics ITS</p>
+            <br>
+            <div class="figure-container">
+                <figure>
+                    <img src="img/Website.png" alt="Website" />
+                    <figcaption>ITS EXPO 2023</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Website.png" alt="Website" />
+                    <figcaption>INDONESIAN CORROSION WEEK 2023</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Website.png" alt="Website" />
+                    <figcaption>INDONESIAN CORROSION WEEK 2023</figcaption>
+                </figure>
+            </div>
         </div>
         <br><br>
         <button class="explore-button">Explore More</button>
@@ -119,14 +106,18 @@
 
     <section class="hire_me">
         <h1>Start a project</h1>
+        <br>
         <p>Interested in collaborating? Let's discuss how we can work together to achieve our goals.</p>
+        <br>
         <button class="hire-button">Hire Me</button>
         <br><br>
     </section>
 
     <footer>
         <h2>Contact Me</h2>
+        <br>
         <p>Feel free to contact me if you have any questions or suggestions.</p>
+        <br>
         <form>
             <label for="name">Name</label>
             <input class="name" id="name" name="name" type="text" placeholder="Name" required>
@@ -153,6 +144,7 @@
                 <td>+62813123456789</td>
             </tr>
         </table>
+        <br>
         <a href="https://www.instagram.com" target="_blank">
             <img src="img/Instagram.png" alt="Instagram"/>
         </a>    
@@ -164,7 +156,7 @@
         </a> 
         <a href="mailto:melanierefman84@gmail.com" target="_blank">
             <img src="img/Email.png" alt="Email"/>
-         </a>  
+        </a>  
     </footer>
 </body>
 </html>
