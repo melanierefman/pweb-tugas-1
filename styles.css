@@ -94,6 +94,14 @@ main a img {
 
 /* Style the "My Experience" section */
 .experience {
+    background-color: #f4f4f4;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+article {
     background-color: #fff;
     padding-left: 120px;
     padding-right: 120px;
@@ -217,11 +225,19 @@ footer a {
     color: #fff;
 }
 
-footer table {
-    margin: 0 auto;
-    color: #fff
+/* Gaya untuk tabel */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px; /* Sesuaikan lebar sesuai kebutuhan Anda */
+    margin: 0 auto; /* Untuk tengahkannya */
+    overflow: hidden; /* Untuk memastikan sudut yang benar-benar terbulat */
 }
 
+tr, th, td {
+    border: 1px solid #f2f2f2;
+}
+  
 footer img {
     width: 30px;
     height: 30px;
