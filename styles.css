@@ -127,7 +127,7 @@ main a img {
 
 /* Style the skill icons */
 .skills img {
-    width: 50px;
+    width: auto;
     height: 50px;
     margin-right: 20px;
 }
