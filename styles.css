@@ -116,14 +116,14 @@ main .sosmed a {
     padding-bottom:120px;
 }
 
-.aboutme-head h2 {
+.aboutme-head h1 {
     font-size: 32px;
     color: #333;
     padding-top: 12px;
     padding-bottom: 20px;
 }
 
-.aboutme-head p {
+.aboutme-head h2 {
     background-color: #333;
     color: #fff;
     border: none;
@@ -141,18 +141,41 @@ main .sosmed a {
 
 .skills {
     background-color: #f4f4f4;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 60px;
-    padding-bottom:60px;
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-top: 120px;
+    padding-bottom:120px;
 }
 
-.skills h2 {
-    font-size: 24px;
+.skills h1 {
+    font-size: 32px;
     color: #333;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
-.skills img {
+.skills-head h2 {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-right: 710px;
+    border-radius: 24px;
+}
+
+.skills p {
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 24px;
+    margin-right: 400px
+}
+
+.skills-item {
+    text-align: right; /* Mengatur teks dan elemen ke kanan */
+}
+
+.skills-item img {
     width: auto;
     height: 50px;
     margin-right: 20px;
