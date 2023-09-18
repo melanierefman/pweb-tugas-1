@@ -1,21 +1,22 @@
-/* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Set a background color and font family for the entire page */
 body {
     background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
-/* Style the header and navigation */
-header {
+nav {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 nav ul {
@@ -32,22 +33,22 @@ nav a {
     color: #fff;
 }
 
-/* Style the main content */
 main {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 60px;
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-top: 120px;
     padding-bottom:60px;
     margin: 0 auto;
+    display: block;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 24px;
     color: #333;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 32spx;
     color: #333;
 }
 
@@ -55,8 +56,49 @@ p {
     font-size: 16px;
     color: #666;
 }
-  
-/* Style the contact button */
+
+main .title {
+    text-align: center;
+}
+
+main .me{
+    padding-top: 40px;
+    text-align: center;
+}
+
+main .me img {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    display: block;
+}
+
+main .me p {
+    padding-top: 60px;
+}
+
+main .sosmed img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+main .sosmed img[alt="Email"] {
+    width: 40px;
+    height: 30px;
+}
+
+main .sosmed {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+main .sosmed a {
+    margin: 10px;
+}
+
 .contact-button {
     background-color: #333;
     color: #fff;
@@ -66,33 +108,79 @@ p {
     cursor: pointer;
 }
 
-/* Style the social media icons */
-main a img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-/* Style the "About Me" section */
 .aboutme {
     background-color: #fff;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 60px;
-    padding-bottom:60px;
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-top: 120px;
+    padding-bottom:120px;
 }
 
-.aboutme h2 {
-    font-size: 24px;
+.aboutme-head h1 {
+    font-size: 32px;
     color: #333;
+    padding-top: 12px;
+    padding-bottom: 20px;
 }
 
-.aboutme p {
+.aboutme-head h2 {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-right: 720px;
+    border-radius: 24px;
+} 
+
+.aboutme-item p {
     font-size: 16px;
     color: #666;
+    /* margin-right: 240px; */
 }
 
-/* Style the "My Experience" section */
+.skills {
+    background-color: #f4f4f4;
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-top: 120px;
+    padding-bottom:120px;
+}
+
+.skills h1 {
+    font-size: 32px;
+    color: #333;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.skills-head h2 {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-right: 710px;
+    border-radius: 24px;
+}
+
+.skills p {
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 24px;
+    margin-right: 400px
+}
+
+.skills-item {
+    text-align: right; /* Mengatur teks dan elemen ke kanan */
+}
+
+.skills-item img {
+    width: auto;
+    height: 50px;
+    margin-right: 20px;
+}
+
 .experience {
     background-color: #f4f4f4;
     padding-left: 120px;
@@ -109,7 +197,6 @@ article {
     padding-bottom:30px;
 }
 
-/* Style the download CV button */
 .cv-button {
     background-color: #333;
     color: #fff;
@@ -119,28 +206,8 @@ article {
     cursor: pointer;
 }
 
-/* Style the skills section */
-.skills {
-    background-color: #f4f4f4;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 60px;
-    padding-bottom:60px;
-}
 
-.skills h2 {
-    font-size: 24px;
-    color: #333;
-}
 
-/* Style the skill icons */
-.skills img {
-    width: auto;
-    height: 50px;
-    margin-right: 20px;
-}
-
-/* Style the projects section */
 .projects {
     background-color: #fff;
     padding-left: 120px;
@@ -176,7 +243,6 @@ article {
     height: auto;
 }
 
-/* Style the "Explore More" button */
 .explore-button {
     background-color: #333;
     color: #fff;
@@ -186,7 +252,6 @@ article {
     cursor: pointer;
 }
 
-/* Style the "Hire Me" section */
 .hire_me {
     background-color: #f4f4f4;
     padding: 20px;
@@ -207,7 +272,6 @@ article {
     cursor: pointer;
 }
 
-/* Style the footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -225,13 +289,12 @@ footer a {
     color: #fff;
 }
 
-/* Gaya untuk tabel */
 table {
     border-collapse: collapse;
     width: 100%;
-    max-width: 400px; /* Sesuaikan lebar sesuai kebutuhan Anda */
-    margin: 0 auto; /* Untuk tengahkannya */
-    overflow: hidden; /* Untuk memastikan sudut yang benar-benar terbulat */
+    max-width: 400px;
+    margin: 0 auto; 
+    overflow: hidden;
 }
 
 tr, th, td {
