@@ -116,15 +116,46 @@ main .sosmed a {
     padding-bottom:120px;
 }
 
-.aboutme h2 {
+.aboutme-head h2 {
+    font-size: 32px;
+    color: #333;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.aboutme-head p {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-right: 720px;
+    border-radius: 24px;
+} 
+
+.aboutme-item p {
+    font-size: 16px;
+    color: #666;
+    /* margin-right: 240px; */
+}
+
+.skills {
+    background-color: #f4f4f4;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 60px;
+    padding-bottom:60px;
+}
+
+.skills h2 {
     font-size: 24px;
     color: #333;
 }
 
-.aboutme p {
-    font-size: 16px;
-    color: #666;
-    margin-right: 240px;
+.skills img {
+    width: auto;
+    height: 50px;
+    margin-right: 20px;
 }
 
 .experience {
@@ -152,24 +183,7 @@ article {
     cursor: pointer;
 }
 
-.skills {
-    background-color: #f4f4f4;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 60px;
-    padding-bottom:60px;
-}
 
-.skills h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-.skills img {
-    width: auto;
-    height: 50px;
-    margin-right: 20px;
-}
 
 .projects {
     background-color: #fff;
