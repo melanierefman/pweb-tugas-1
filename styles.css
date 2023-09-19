@@ -78,14 +78,9 @@ main .me p {
 }
 
 main .sosmed img {
-    width: 30px;
-    height: 30px;
-    margin: auto;
-}
-
-main .sosmed img[alt="Email"] {
     width: 40px;
-    height: 30px;
+    height: 40px;
+    margin: auto;
 }
 
 main .sosmed {
