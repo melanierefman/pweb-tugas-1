@@ -4,6 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+
+        main{
+            background-color: #fff;
+        }
+
+        .main-head h1{
+            font-size: 32px;
+            color: #333;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 32px;
+            color: #333;
+            padding-bottom: 32px;
+        }
+
+        .experience h2 {
+            font-size: 32px;
+            color: #333;
+            padding-bottom: 48px;
+        }
+        
+        p {
+            font-size: 18px;
+            color: #666;
+            max-width: 800px;
+            padding-bottom: 12px;
+        }
+
+        .main-item {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            padding-bottom: 40px;
+        }
+
+        main img{
+            width: 240px;
+            height: auto;
+        }
+
+        .education {
+            padding-left: 240px;
+            padding-right: 240px;
+            padding-top: 60px;
+            padding-bottom:50px;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+        }
+
+        .education li {
+            font-size: 24px;
+            color: #666;
+            font-weight: 600;
+            padding-bottom: 12px;
+        }
+
+        .education p {
+            font-size: 20px;
+            color: #333;
+            max-width: 800px;
+        }
+
+        .experience {
+            background-color: #fff;
+            padding-left: 240px;
+            padding-right: 240px;
+            padding-top: 60px;
+            padding-bottom:60px;
+        }
+
+        .experience img {
+            width: auto;
+            height: 240px;
+        }
+
+        .its, .hima, .sch {
+            display : flex;
+            flex-direction: row;
+            gap: 60px;
+            padding-bottom: 60px;
+        }
+
+        .experience h3 {
+            font-size: 24px;
+            color: #333;
+            padding-bottom: 12px;
+        }
+
+        .training {
+            padding-left: 240px;
+            padding-right: 240px;
+            padding-top: 60px;
+            padding-bottom:60px;
+        }
+
+        .training h2 {
+            font-size: 32px;
+            color: #333;
+            padding-bottom: 8px;
+        }
+
+        .training li {
+            font-size: 18px;
+            color: #666;
+            padding-bottom: 4px;
+        }
+   
+        footer {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            align-items: flex-start;
+            padding-left: 140px; 
+            padding-right: 80px; 
+            padding-top: 60px; 
+            padding-bottom: 200px; 
+            gap: 120px;
+        }
+        
+        footer h1 {
+            font-size: 32px;
+            color: #fff;
+            padding-bottom: 20px;
+            max-width: 320px;
+        }
+        
+        footer h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            max-width: 240px;
+        }
+        
+        .contact h3 {
+            padding-bottom: 24px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            max-width: 700px;
+        }
+        
+        tr, th, td {
+            border: 1px solid #f2f2f2;
+            padding : 12px 16px;
+        }
+        
+        footer ul {
+            list-style: none;
+        }
+        
+        footer li {
+            margin-bottom: 10px;
+        }
+    </style>
     <title>Melanie's Projects</title>
 </head>
 
@@ -18,106 +178,127 @@
             </ul>
         </nav>
     </header>
-        <main>
+
+    <main>
+        <div class="main-head">
             <h1>About Me</h1>
-            <br>
+        </div>
+        <div class="main-item">
+            <img src="img/girl.png" alt="Me"/>
             <p>A 5th-semester Informatics Engineering undergraduate at Sepuluh Nopember Institute of Technology, with a strong background in design, further developed through active participation in various organizations and committees. Highly interested in UI/UX design. Currently, actively engaged in HMTC as a Staff of Media Information and in Software House TC as a Staff of Marketing and Design, also serving as the Vice Head of the Design, Documentary, Decorating, and Editing Division in Schematics ITS 2023. Proficient in basic programming skills and familiar with applications like Figma, Adobe Photoshop, and Adobe Illustrator.</p>
+        </div>
+    </main>
+
+    <section class="education">
+        <h2>My Education</h2>
+        <ul>
+            <li>Institut Teknologi Sepuluh Nopember (2021-Present)</dt>
+            <p>Informatics Engineering</p>
+            <li>SMAN 1 Padang (2018-2021)</dt>
+            <p>Science</p>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2>My Experience</h2>
+        <div class="hima">
+            <img src="img/hima.png" alt="HMTC"/>
+            <div>
+                <h3>HMTC ITS</h3>
+                <p>Staff of Media Information (March 2023 - Present)</p>
+                <ul>
+                    <li>Organized and planned the placement of information on the HMTC social media platform to ensure the dissemination of relevant and timely content to the target audience.</li>
+                    <li>Acted as an intermediary between external parties and the organization, facilitated the publication of events or initiatives from external sources to the department.</li>
+                    <li>Served as the Treasurer for the Basic Media Schooling 2023 event, responsible for managing financial resources, budgeting, expense tracking, and maintaining financial transparency.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sch">
+            <img src="img/sch.png" alt="Schematics 2023"/>
+            <div>
+                <h3>Schematics ITS</h3>
+                <p>Vice Head of Design, Documentary, Decorating, and Editing Division (December 2022 - Present)</p>
+                <ul>
+                    <li>Coordinated design requests from other divisions to the team members effectively, ensuring clear communication among the team members. This resulted in producing high-quality designs that met the requested specifications and were completed on time.</li>
+                </ul>
+                <br>
+                <p>Staff of Design, Documentary, Decorating, and Content Creator Division (May - December 2022)</p>
+                <ul>
+                    <li>Worked on various design projects and completed them as requested.</li>
+                    <li>Designed captivating social media feed and story templates to enhance social media engagement.</li>
+                    <li>Created essential assets in vector format, ensuring quality for various applications.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="its">
+            <img src="img/its.png" alt="ITS"/>
+            <div>
+                <h3>Institut Teknologi Sepuluh Nopember</h3>
+                <p>Assistant Lecturer for Mathematics 1 (September - December 2022)</p>
+                <ul>
+                    <li>Conducted tutorial sessions to assist students in understanding the course material for Basic Mathematics 1.</li>
+                    <li>Graded assignments, exercises, and quizzes during the tutorial sessions, providing feedback to monitor students' progress.</li>
+                    <li>Assisted in supervising quizzes, mid-term exams, and final exams for the Basic Mathematics 1 class.</li>
+                    <li>Participated in the evaluation process of quizzes and exams for all students in the Basic Mathematics 1 class, ensuring accuracy and fairness.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="training">
+        <h2>My Training</h2>
+        <ol>
+            <li>UX Designer: Digital Product Development by Skill Academy Ruangguru</li>
+            <li>Intro to UX Design Research by BuildWith Angga</li>
+            <li>Belajar Dasar Pemrograman JavaScript by Dicoding</li>
+            <li>Memulai Pemrograman dengan C by Dicoding</li>
+        </ol>
+    </section>
+
+    <footer>
+        <div class="me2">
+            <h1>Melanie Sayyidina Sabrina Refman</h1>
+            <h2>Informatics Students, Institut Teknologi Sepuluh Nopember</h2>
+        </div>
+
+        <div class="expl">
+            <h3>Explore</h3>
             <br>
-            <img src="img/girl.png" alt="Me" /><br><br>
-        </main>
-
-        <section class="experience">
-            <h2>My Education</h2>
-            <br> 
-            <dl>
-                <dt>Institut Teknologi Sepuluh Nopember</dt>
-                <dd>Informatics Engineering</dd>
-                <br>
-                <dt>SMAN 1 Padang</dt>
-                <dd>Science</dd>
-            </dl>
-        </section>
-
-        <section class="experience">
-            <h2>My Experience</h2>
-            <br> 
-            <h3>Institut Teknologi Sepuluh Nopember</h3>
-            <p>Assistant Lecturer for Mathematics 1</p>
             <ul>
-                <li>Conducted tutorial sessions to assist students in understanding the course material for Basic 
-                    Mathematics 1.</li>
-                <li>Graded assignments, exercises, and quizzes during the tutorial sessions, providing feedback to monitor 
-                    students' progress.</li>
-                <li>Assisted in supervising quizzes, mid-term exams, and final exams for the Basic Mathematics 1 class.</li>
-                <li>Participated in the evaluation process of quizzes and exams for all students in the Basic Mathematics 1 
-                    class, ensuring accuracy and fairness.</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
             </ul>
-            <br>   
-            <h3>HMTC ITS</h3>
-            <p>Staff of Media Information</p>
+        </div>
+
+        <div class="sosmed-detail">
+            <h3>Social Media</h3>
+            <br>
             <ul>
-                <li>Organized and planned the placement of information on the HMTC social media platform to ensure the 
-                    dissemination of relevant and timely content to the target audience.
-                    </li>
-                <li>Acted as an intermediary between external parties and the organization, facilitated the publication of 
-                    events or initiatives from external sources to the department.</li>
-                <li>Served as the Treasurer for the Basic Media Schooling 2023 event, responsible for managing financial 
-                    resources, budgeting, expense tracking, and maintaining financial transparency.
-                    </li>
-        </section>
+                <li>Instagram</li>
+                <li>Email</li>
+                <li>Linkedin</li>
+                <li>Github</li>
+            </ul>
+        </div> 
 
-        <section class="experience">
-            <h2>My Training</h2>
-            <ol>
-                <li>UX Designer: Digital Product Development by Skill Academy Ruangguru</li>
-                <li>Intro to UX Design Research by BuildWith Angga</li>
-                <li>Belajar Dasar Pemrograman JavaScript by Dicoding</li>
-                <li>Memulai Pemrograman dengan C by Dicoding</li>
-            </ol>
-        </section>
-
-        <footer>
-            <div class="me2">
-                <h1>Melanie Sayyidina Sabrina Refman</h1>
-                <h2>Informatics Students, Institut Teknologi Sepuluh Nopember</h2>
-            </div>
-    
-            <div class="expl">
-                <h3>Explore</h3>
-                <br>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-    
-            <div class="sosmed-detail">
-                <h3>Social Media</h3>
-                <br>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Email</li>
-                    <li>Linkedin</li>
-                    <li>Github</li>
-                </ul>
-            </div> 
-    
-            <div class="contact">
-                <h3>My Contact</h3>
-                <table>
-                    
-                    <tr>
-                        <th>Email</th>
-                        <td>melanierefman@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <th>Phone</th>
-                        <td>+62813123456789</td>
-                    </tr>
-                </table>
-            </div>
-        </footer>
+        <div class="contact">
+            <h3>My Contact</h3>
+            <table>
+                
+                <tr>
+                    <th>Email</th>
+                    <td>melanierefman@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+62813123456789</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
 </body>
 </html>
