@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="styles.css">
     <style>
 
+        .main-head p {
+            font-size: 18px;
+            color: #666;
+            padding-bottom: 80px;
+            text-align: center;
+        }
+
         article {
-            background-color: #fff;
-            padding-left: 240px;
-            padding-right: 240px;
             padding-top: 120px;
-            padding-bottom:120px;
+            padding-bottom:240px;
         }
 
         article h1 {
@@ -33,7 +37,7 @@
             padding-bottom: 24px;
         }
 
-        article p {
+        .experience-item {
             font-size: 18px;
             color: #666;
             padding-top: 20px;
@@ -49,11 +53,24 @@
             height: auto;
         }
 
+        .experience-item  {
+            background-color: #fff;
+            padding-left: 240px;
+            padding-right: 240px;
+            padding-top: 60px;
+            padding-bottom:20px;
+        }
+
         .experience-item a {
             text-decoration: none;
             font-size: large;
             font-weight: 600;
             font-style: italic;
+        }
+
+        .experience-item a:hover {
+            color: #333;
+            font-style: underline;
         }
 
         iframe {
@@ -62,54 +79,6 @@
             margin-left: auto;
             margin-right: auto;
             display: block; /* Untuk memastikan elemen iframe adalah blok */
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            display: flex;
-            align-items: flex-start;
-            padding-left: 140px; 
-            padding-right: 80px; 
-            padding-top: 60px; 
-            padding-bottom: 200px; 
-            gap: 120px;
-        }
-        
-        footer h1 {
-            font-size: 32px;
-            color: #fff;
-            padding-bottom: 20px;
-            max-width: 320px;
-        }
-        
-        footer h2 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #fff;
-            max-width: 240px;
-        }
-        
-        .contact h3 {
-            padding-bottom: 24px;
-        }
-        
-        table {
-            border-collapse: collapse;
-            max-width: 700px;
-        }
-        
-        tr, th, td {
-            border: 1px solid #f2f2f2;
-            padding : 12px 16px;
-        }
-        
-        footer ul {
-            list-style: none;
-        }
-        
-        footer li {
-            margin-bottom: 10px;
         }
         
     </style>
@@ -129,7 +98,11 @@
     </header>
 
     <article>
-        <h1>My Projects</h1>
+
+        <div class="main-head">
+            <h1>My Project</h1>
+            <p>You can take a look at my project where I've completed it🤩</p>
+        </div>
 
         <section class="experience-item">
             <h2>Web Design</h2>
@@ -177,10 +150,28 @@
     </article>
 
     <footer>
-        <div class="me2">
-            <h1>Melanie Sayyidina Sabrina Refman</h1>
-            <h2>Informatics Students, Institut Teknologi Sepuluh Nopember</h2>
-        </div>
+        <section>
+            <div class="me2">
+                <h1>Melanie Sayyidina Sabrina Refman</h1>
+                <h2>Informatics Students, Institut Teknologi Sepuluh Nopember</h2>
+            </div>
+
+            <div class="sosmed">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram2.png" alt="Instagram"/>
+                </a>    
+                <a href="https://github.com/melanierefman" target="_blank">
+                    <img src="img/Github2.png" alt="Github"/>
+                </a>    
+                <a href="https://www.Linkedin.com" target="_blank">
+                    <img src="img/Linkedin2.png" alt="Linkedin"/>
+                </a> 
+                <a href="mailto:melanierefman84@gmail.com" target="_blank">
+                    <img src="img/email2.png" alt="Email"/>
+                </a>
+            </div>  
+        </section>
+        
 
         <div class="expl">
             <h3>Explore</h3>

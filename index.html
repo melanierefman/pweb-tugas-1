@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .me img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        main .sosmed a img:hover {
+            transform: rotate(360deg); 
+            transition: transform 0.5s ease;
+        }
+
+        .skills-item1 img:hover,
+        .skills-item2 img:hover {
+            transform: scale(1.15); /* Putar 360 derajat saat dihover */
+            transition: transform 0.5s ease; /* Efek transisi selama 0.5 detik */
+        }
+    </style>
     <title>Portofolio Melanie Sayyidina Sabrina Refman</title>
 </head>
 
@@ -61,24 +78,28 @@
     </section>
 
     <section class="skills">
+        <div class="skills-item">
+            <div class="skills-item1">
+                <img src="img/figma.png" alt="Figma"/>
+                <img src="img/github.png" alt="Github"/>
+                <img src="img/python.png" alt="Python"/>
+                <img src="img/c.png" alt="C"/>
+                <img src="img/cpp.png" alt="Cpp"/>
+            </div>
+            <br>
+            <div class="skills-item2">
+                <img src="img/sql.png" alt="SQL"/>
+                <img src="img/java.png" alt="Java"/>
+                <img src="img/ps.png" alt="Ps"/>
+                <img src="img/ai.png" alt="Ai"/>
+                <img src="img/trello.png" alt="Trello"/>
+            </div>
+        </div>
+
         <div class="skills-head">
             <h2>MY SKILLS</h2>
             <h1>Things That I'm Good at</h1>
             <p>I create user interfaces that are straightforward, user-friendly, and adaptable, allowing users to accomplish tasks more efficiently and quickly using these technologies.</p>
-        </div>
-        
-        <div class="skills-item">
-            <img src="img/figma.png" alt="Figma"/>
-            <img src="img/github.png" alt="Github"/>
-            <img src="img/python.png" alt="Python"/>
-            <img src="img/c.png" alt="C"/>
-            <img src="img/cpp.png" alt="Cpp"/>
-            <br>
-            <img src="img/sql.png" alt="SQL"/>
-            <img src="img/java.png" alt="Java"/>
-            <img src="img/ps.png" alt="Ps"/>
-            <img src="img/ai.png" alt="Ai"/>
-            <img src="img/trello.png" alt="Trello"/>
         </div>
     </section>
 
@@ -98,15 +119,21 @@
             <div class="figure-container">
                 <figure>
                     <img src="img/Website.png" alt="Website" />
-                    <figcaption>ITS EXPO 2023</figcaption>
+                    <figcaption>
+                        <a href="https://www.expo-its.com/">ITS EXPO 2023</a>
+                    </figcaption>
                 </figure>
                 <figure>
                     <img src="img/Website.png" alt="Website" />
-                    <figcaption>INDONESIAN CORROSION WEEK 2023</figcaption>
+                    <figcaption>
+                        <a href="https://www.indocor-its.com/icw">INDONESIAN CORROSION WEEK 2023</a>
+                    </figcaption>
                 </figure>
                 <figure>
                     <img src="img/Website.png" alt="Website" />
-                    <figcaption>INDONESIAN CORROSION WEEK 2023</figcaption>
+                    <figcaption>
+                        <a href="https://www.figma.com/proto/3Xky1ZJV5WPNpvqgs3IFhz/Tugas-Akhir---Landing-Page-UI---Melanie-Sayyidina-Sabrina-Refman?page-id=56%3A701&type=design&node-id=56-702&viewport=498%2C375%2C0.09&t=i0bn5584HKguiNzH-1&scaling=min-zoom&starting-point-node-id=56%3A702&mode=design">Redesign Traveloka Website</a>
+                    </figcaption>
                 </figure>
             </div>
         </div>
@@ -125,10 +152,28 @@
     </section>
 
     <footer>
-        <div class="me2">
-            <h1>Melanie Sayyidina Sabrina Refman</h1>
-            <h2>Informatics Students, Institut Teknologi Sepuluh Nopember</h2>
-        </div>
+        <section>
+            <div class="me2">
+                <h1>Melanie Sayyidina Sabrina Refman</h1>
+                <h2>Informatics Students, Institut Teknologi Sepuluh Nopember</h2>
+            </div>
+
+            <div class="sosmed">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram2.png" alt="Instagram"/>
+                </a>    
+                <a href="https://github.com/melanierefman" target="_blank">
+                    <img src="img/Github2.png" alt="Github"/>
+                </a>    
+                <a href="https://www.Linkedin.com" target="_blank">
+                    <img src="img/Linkedin2.png" alt="Linkedin"/>
+                </a> 
+                <a href="mailto:melanierefman84@gmail.com" target="_blank">
+                    <img src="img/email2.png" alt="Email"/>
+                </a>
+            </div>  
+        </section>
+        
 
         <div class="expl">
             <h3>Explore</h3>

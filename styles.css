@@ -94,13 +94,20 @@ main .sosmed a {
     margin: 10px;
 }
 
-.contact-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
+.main-head {
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.main-head h1{
+    font-size: 32px;
+    color: #333;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.main-head p{
+    text-align: center;
 }
 
 .aboutme {
@@ -134,12 +141,26 @@ main .sosmed a {
     /* margin-right: 240px; */
 }
 
+.skills-head {
+    flex: 1; /* Mengambil sisa ruang yang tersedia */
+    padding: 20px; /* Menambahkan padding untuk memberikan ruang di sekitar .skills-head */
+}
+
 .skills {
     background-color: #f4f4f4;
     padding-left: 240px;
     padding-right: 240px;
     padding-top: 120px;
     padding-bottom:120px;
+    display: flex; /* Mengubah elemen .skills menjadi flex container */
+    flex-wrap: nowrap; /* Mencegah wrapping ke baris baru */
+    justify-content: space-between; /* Membuat ruang di antara .skills-item dan .skills-head */
+    align-items: center;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .skills h1 {
@@ -155,7 +176,7 @@ main .sosmed a {
     border: none;
     padding: 8px 16px;
     font-size: 16px;
-    margin-right: 870px;
+    margin-left: 465px;
     border-radius: 24px;
 }
 
@@ -163,14 +184,14 @@ main .sosmed a {
     font-size: 16px;
     color: #333;
     padding-bottom: 24px;
-    margin-right: 600px
+    margin-left: 120px;
 }
 
-.skills-item {
+.skills {
     text-align: right; /* Mengatur teks dan elemen ke kanan */
 }
 
-.skills-item img {
+.skills img {
     width: auto;
     height: 50px;
     margin-right: 20px;
@@ -220,6 +241,12 @@ main .sosmed a {
     border-radius: 12px;
 }
 
+.tab button:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
 .tabcontent {
 margin-right :100px;
 }
@@ -259,6 +286,12 @@ figcaption {
     font-size: 18px;
     cursor: pointer;
     border-radius: 12px;
+}
+
+.explore-button:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
 }
 
 .hire {
@@ -305,6 +338,12 @@ figcaption {
     border-radius: 12px;
 }
 
+.hire-button:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -318,26 +357,41 @@ footer {
 }
 
 footer h1 {
-    font-size: 32px;
+    font-size: 22px;
     color: #fff;
-    padding-bottom: 20px;
-    max-width: 320px;
+    padding-bottom: 12px;
+    max-width: 250px;
 }
 
 footer h2 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
     max-width: 240px;
 }
 
-.contact h3 {
-    padding-bottom: 24px;
+footer .sosmed img {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    padding-top: 12px;
+}
+
+footer .sosmed {
+    display: flex; 
+    justify-content: left; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.expl, .sosmed-detail h3 {
+    padding-bottom: 4px;
 }
 
 table {
     border-collapse: collapse;
     max-width: 700px;
+    margin-top: 25px;
 }
 
 tr, th, td {
