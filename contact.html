@@ -4,6 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        main h1 {
+            font-size: 32px;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 580px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            background-color: #f9f9f9;
+        }
+        
+        form img {
+            width: 24px;
+            height: auto;
+        }
+
+        .group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 16px;
+        }
+
+        .message, .phone {
+            padding-bottom: 16px;
+        }
+
+        .label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 4px;
+        }
+
+        input, textarea {
+            font-family: "Inter", serif;
+            font-size: medium;
+            width: 100%; 
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+
+    </style>
     <title>Melanie's Projects</title>
 </head>
 
@@ -21,56 +103,84 @@
 
     <main>
         <h1>Contact Me</h1>
-        <br>
         <p>Feel free to contact me if you have any questions or suggestions.</p>
-        <br>
         <form>
-            <label for="name">Name</label>
-            <input class="name" id="name" name="name" type="text" placeholder="Name" required>
-            <br>
-            <label for="email">Email</label>
-            <input class="email" id="email" name="email" type="email" placeholder="Email" required>
-            <br>
-            <label for="subject">Subject</label>
-            <input class="subject" id="subject" name="subject" type="text" placeholder="Subject" required>
-            <br>
-            <label for="message">Message</label><br>
-            <textarea class="message" id="message" name="message" placeholder="Message" required></textarea>
-            <br>
-            <input type="submit" value="Submit">
+            <section class="group">
+                <div class="name">
+                    <div class="label">
+                        <img src="img/user.png" alt="user" />
+                        <label for="name">Name</label>
+                    </div>
+                    <input class="name" id="name" name="name" type="text" placeholder="Your full name" required>
+                </div>
+                <div class="email">
+                    <div class="label">
+                        <img src="img/mail.png" alt="mail" />
+                        <label for="email">Email</label>
+                    </div>
+                    <input class="email" id="email" name="email" type="email" placeholder="Your email address" required>
+                </div>
+            </section>
+            
+            <div class="phone">
+                <div class="label">
+                    <img src="img/phone.png" alt="phone" />
+                    <label for="subject">Phone</label><br>
+                </div>
+                <input class="subject" id="subject" name="subject" type="text" placeholder="Your phone number" required>
+            </div>
+
+            <div class="message">
+                <div class="label">
+                    <img src="img/msg.png" alt="message" />
+                    <label for="message">Message</label>
+                </div>
+                <textarea class="message" id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button class="send">Send Message</button>
         </form>
     </main>
 
     <footer>
-        <table>
-            <tr>
-                <th>Email</th>
-                <th>Phone</th>
-            </tr>
-            <tr>
-                <td>melanierefman@gmail.com</td>
-                <td>+62813123456789</td>
-            </tr>
-        </table>
-        <br>
-        <h3>Explore</h3>
-        <br>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
-        <br>
-        <h3>Social Media</h3>
-        <br>
-        <ul>
-            <li>Instagram</li>
-            <li>Email</li>
-            <li>Linkedin</li>
-            <li>Github</li>
-        </ul>
-        <br>
+        <div class="me2">
+            <h1>Melanie Sayyidina Sabrina Refman</h1>
+            <h2>Informatics Students, Institut Teknologi Sepuluh Nopember</h2>
+        </div>
+
+        <div class="expl">
+            <h3>Explore</h3>
+            <br>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="sosmed-detail">
+            <h3>Social Media</h3>
+            <br>
+            <ul>
+                <li>Instagram</li>
+                <li>Email</li>
+                <li>Linkedin</li>
+                <li>Github</li>
+            </ul>
+        </div> 
+
+        <div class="contact">
+            <h3>My Contact</h3>
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td>melanierefman@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+62813123456789</td>
+                </tr>
+            </table>
+        </div>
     </footer>
-</body>
 </html>
