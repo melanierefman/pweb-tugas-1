@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-    background-color: #6344C6;
+    background-color: #172755;
     color: #000;
     text-align: center;
     padding: 20px 0;
@@ -34,7 +34,7 @@ nav a {
 }
 
 main {
-    background-color: #FFC448;
+    background-color: #172755;
     padding-left: 240px;
     padding-right: 240px;
     padding-top: 120px;
@@ -45,17 +45,17 @@ main {
 
 h1 {
     font-size: 24px;
-    color: #000;
+    color: #EF2A82;
 }
 
 h2 {
-    font-size: 32spx;
-    color: #000;
+    font-size: 32px;
+    color: #EF2A82;
 }
 
 p {
     font-size: 16px;
-    color: #000;
+    color: #fff;
 }
 
 main .title {
@@ -102,13 +102,14 @@ main .sosmed a {
 
 .main-head h1{
     font-size: 32px;
-    color: #333;
-    padding-bottom: 40px;
+    color: #fff;
+    padding-bottom: 16px;
     text-align: center;
 }
 
 .main-head p{
     text-align: center;
+    color: #8794BA;
 }
 
 .aboutme {
@@ -121,24 +122,24 @@ main .sosmed a {
 
 .aboutme-head h1 {
     font-size: 32px;
-    color: #000;
+    color: #172755;
     padding-top: 12px;
     padding-bottom: 20px;
 }
 
 .aboutme-head h2 {
-    background-color: #FFC448;
-    color: #000;
+    background-color: #FAB8D5;
+    color: #172755;
     border: none;
     padding: 8px 16px;
     font-size: 16px;
-    margin-right: 880px;
+    margin-right: 745px;
     border-radius: 24px;
 } 
 
 .aboutme-item p {
     font-size: 16px;
-    color: #000;
+    color: #8794BA;
     /* margin-right: 240px; */
 }
 
@@ -148,7 +149,7 @@ main .sosmed a {
 }
 
 .skills {
-    background-color: #6344C6;
+    background-color: #EEEEF6;
     padding-left: 240px;
     padding-right: 240px;
     padding-top: 120px;
@@ -166,26 +167,26 @@ main .sosmed a {
 
 .skills h1 {
     font-size: 32px;
-    color: #fff;
+    color: #172755;
     padding-top: 12px;
     padding-bottom: 12px;
 }
 
 .skills-head h2 {
-    background-color: #fff;
-    color: #000;
+    background-color: #AAD7FA;
+    color: #172755;
     border: none;
     padding: 8px 16px;
     font-size: 16px;
-    margin-left: 465px;
+    margin-left: 330px;
     border-radius: 24px;
 }
 
 .skills p {
     font-size: 16px;
-    color: #fff;
+    color: #8794BA;
     padding-bottom: 24px;
-    margin-left: 120px;
+    margin-left:120px;
 }
 
 .skills {
@@ -207,12 +208,12 @@ main .sosmed a {
 }
 
 .project-head h2 {
-    background-color: #6344C6;
-    color: #fff;
+    background-color: #FAB8D5;
+    color: #172755;
     border: none;
     padding: 8px 16px;
     font-size: 16px;
-    margin-right: 840px;
+    margin-right: 710px;
     border-radius: 24px;
 } 
 
@@ -233,7 +234,7 @@ main .sosmed a {
 }
 
 .tab button {
-    background-color: #6344C6;
+    background-color: #0088F0;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -244,18 +245,14 @@ main .sosmed a {
 
 .tab button:hover {
     background-color: #fff;
-    color: #333;
-    border: 1px solid #ccc;
-}
-
-.tabcontent {
-margin-right :100px;
+    color: #172755;
+    border: 1px solid #0088F0;
 }
 
 .figure-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    grid-gap: 48px; /* Sesuaikan dengan jarak yang Anda inginkan */
+    grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+    grid-gap: 16px; /* Sesuaikan dengan jarak yang Anda inginkan */
     padding-bottom: 12px;
 }
 
@@ -267,7 +264,7 @@ figcaption {
 }
   
 .figure-container img {
-    width: 300px;
+    width: 260px;
     height: auto;
 }
 
@@ -279,7 +276,7 @@ figcaption {
 }
 
 .explore-button {
-    background-color: #6344C6;
+    background-color: #EF2A82;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -289,13 +286,13 @@ figcaption {
 }
 
 .explore-button:hover {
-    background-color: #6344C6;
-    color: #fff;
-    border: 1px solid #6344C6;
+    background-color: #fff;
+    color: #172755;
+    border: 1px solid #172755;
 }
 
 .hire {
-    background: linear-gradient(to bottom, #fff 50%, #11141D 50%);
+    background: linear-gradient(to bottom, #fff 50%, #172755 50%);
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -304,24 +301,24 @@ figcaption {
 .hire_me {
     display: flex;
     align-items: center;
-    background-color: #FFC448;
+    background-color: #0088F0;
     padding-left: 80px; 
     padding-right: 80px; 
     padding-top: 60px; 
     padding-bottom: 60px; 
     text-align: center;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     border-radius: 16px;
 }
 
 .hire_me h1 {
     font-size: 32px; /* Ganti ukuran font sesuai kebutuhan Anda */
-    color: #6344C6;
+    color: #FFF;
 }
 
 .hire_me p {
-    color : #11141D;
+    color : #FFF;
     font-weight: 600;
     text-align: center; /* Mengatur teks agar berada di tengah */
     max-width: 400px;
@@ -329,23 +326,24 @@ figcaption {
 }
 
 .hire-button {
-    background-color: #fff;
-    color: #11141D;
-    border: none;
+    background-color: #0088F0;
+    color: #FFF;
+    border: 2px solid #FFF;;
     padding: 12px 24px;
     font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
     border-radius: 12px;
 }
 
 .hire-button:hover {
     background-color: #fff;
-    color: #333;
+    color: #172755;
     border: 1px solid #ccc;
 }
 
 footer {
-    background-color: #11141D;
+    background-color: #172755;
     color: #fff;
     display: flex;
     align-items: flex-start;
@@ -358,7 +356,7 @@ footer {
 
 footer h1 {
     font-size: 22px;
-    color: #fff;
+    color: #EF2A82;
     padding-bottom: 12px;
     max-width: 250px;
 }
@@ -392,10 +390,11 @@ table {
     border-collapse: collapse;
     max-width: 700px;
     margin-top: 25px;
+    color: #FFF;
 }
 
 tr, th, td {
-    border: 1px solid #f2f2f2;
+    border: 1px solid #EF2A82;
     padding : 12px 16px;
 }
 
@@ -405,5 +404,6 @@ footer ul {
 
 footer li {
     margin-bottom: 10px;
+    color: #8794BA;
 }
 
