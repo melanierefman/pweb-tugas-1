@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .calculator {
+            font-family: "Inter", sans-serif;
+            margin: 0 auto;
+            max-width: 280px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+        }
+
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .input {
+            width: 240px;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            height: 53px;
+            font-size: 24px;
+            text-align: right;
+        }
+
+        .btn-calculator {
+            width: 53px;
+            height: 53px;
+            font-size: 24px;
+        }
+
+        .btn-equal {
+            width: 112px;
+            height: 53px;
+        }
+
+        .line1, .line2, .line3, .line4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container centered">
+        <div class="row justify-content-center">
+            <div class="calculator col-md-6">
+                <h1 class="text-center">KALKULATOR</h1>
+                <div class="input">
+                    <input id="x" name="x" class="form-control mb-2" readonly>
+                </div>
+                <div class="line1">
+                    <button type="button" onclick="updateInput('7')" class="btn btn-primary btn-calculator mr-1">7</button>
+                    <button type="button" onclick="updateInput('8')" class="btn btn-primary btn-calculator mr-1">8</button>
+                    <button type="button" onclick="updateInput('9')" class="btn btn-primary btn-calculator mr-1">9</button>
+                    <button type="button" onclick="updateOperator('+')" class="btn btn-success btn-calculator">+</button>
+                </div>
+                <div class="line2">
+                    <button type="button" onclick="updateInput('4')" class="btn btn-primary btn-calculator mr-1">4</button>
+                    <button type="button" onclick="updateInput('5')" class="btn btn-primary btn-calculator mr-1">5</button>
+                    <button type="button" onclick="updateInput('6')" class="btn btn-primary btn-calculator mr-1">6</button>
+                    <button type="button" onclick="updateOperator('-')" class="btn btn-success btn-calculator">-</button>
+                </div>
+                <div class="line3">
+                    <button type="button" onclick="updateInput('1')" class="btn btn-primary btn-calculator mr-1">1</button>
+                    <button type="button" onclick="updateInput('2')" class="btn btn-primary btn-calculator mr-1">2</button>
+                    <button type="button" onclick="updateInput('3')" class="btn btn-primary btn-calculator mr-1">3</button>
+                    <button type="button" onclick="updateOperator('*')" class="btn btn-success btn-calculator">*</button>
+                </div>
+                <div class="line4">
+                    <button type="button" onclick="clearInput()" class="btn btn-warning btn-calculator mr-1">C</button>
+                    <button type="button" onclick="calculate()" class="btn btn-success btn-equal mr-1">=</button>
+                    <button type="button" onclick="updateOperator('/')" class="btn btn-success btn-calculator">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var currentInput = "";
+        var currentOperator = "";
+        var firstValue = null;
+
+        function updateInput(value) {
+            currentInput += value;
+            document.getElementById('x').value = currentInput;
+        }
+
+        function updateOperator(operator) {
+            if (currentInput !== "") {
+                firstValue = parseFloat(currentInput);
+                currentInput = "";
+            }
+            currentOperator = operator;
+        }
+
+        function clearInput() {
+            currentInput = "";
+            currentOperator = "";
+            firstValue = null;
+            document.getElementById('x').value = "";
+        }
+
+        function calculate() {
+            if (currentInput === "") {
+                document.getElementById('x').value = 'Invalid input';
+                return;
+            }
+
+            if (firstValue === null) {
+                document.getElementById('x').value = 'Invalid input';
+                return;
+            }
+
+            var secondValue = parseFloat(currentInput);
+            var result;
+
+            switch (currentOperator) {
+                case '+':
+                    result = firstValue + secondValue;
+                    break;
+                case '-':
+                    result = firstValue - secondValue;
+                    break;
+                case '*':
+                    result = firstValue * secondValue;
+                    break;
+                case '/':
+                    if (secondValue === 0) {
+                        document.getElementById('x').value = 'Error: Division by zero';
+                        return;
+                    }
+                    result = firstValue / secondValue;
+                    break;
+                default:
+                    result = 'Invalid operator';
+            }
+
+            document.getElementById('x').value = result;
+            currentInput = result.toString();
+        }
+    </script>
+</body>
+</html>
